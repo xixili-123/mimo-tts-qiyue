@@ -1,0 +1,22 @@
+{
+  "name": "MiMo Cloudflare TTS",
+  "version": 1,
+  "description": "Cloudflare Worker 中转 MiMo TTS；将 URL 替换为你部署后的 Worker /tts 地址。",
+  "endpoint": "https://YOUR-WORKER.workers.dev/tts",
+  "method": "POST",
+  "request": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "text": "{{text}}",
+      "voice": "冰糖",
+      "style": "自然、清晰、适合中文有声小说朗读，语速适中，吐字清楚。"
+    }
+  },
+  "response": {
+    "type": "audio",
+    "contentType": "audio/wav"
+  },
+  "note": "这是通用接口适配模板；栖阅具体 TTS 源字段名需按你之前使用的《TTS源编写指南》替换。"
+}

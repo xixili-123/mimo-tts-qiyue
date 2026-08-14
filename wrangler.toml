@@ -1,0 +1,10 @@
+name = "mimo-tts-qiyue"
+main = "worker.js"
+compatibility_date = "2026-08-14"
+
+[vars]
+MIMO_MODEL = "mimo-v2.5-tts"
+MIMO_VOICE = "冰糖"
+
+[secrets]
+required = ["MIMO_API_KEY"]

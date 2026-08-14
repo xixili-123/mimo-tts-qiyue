@@ -1,0 +1,13 @@
+{
+  "name": "mimo-tts-qiyue",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MiMo V2.5 TTS Cloudflare Worker for 栖阅",
+  "cloudflare": {
+    "bindings": {
+      "MIMO_API_KEY": {
+        "description": "必填：你的 MiMo API Key。只会作为 Cloudflare Secret 保存，不会写入代码或 GitHub。"
+      }
+    }
+  }
+}

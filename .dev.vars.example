@@ -1,0 +1,2 @@
+# 本文件仅用于本地开发示例；不要改名为 .dev.vars 后提交真实 Key。
+MIMO_API_KEY=请填写你的MiMo_API_Key
